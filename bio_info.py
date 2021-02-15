@@ -1,5 +1,5 @@
 # Biography info
-import time
+import time, os
 
 print("I can surmarize your Biography!!")
 time.sleep(1.3)
@@ -38,11 +38,11 @@ if export_biography == 'y':
         bio_export.write(biography)
     print("Exporting...")
     time.sleep(1)
-    print("Success!")
+    print(f"Success!!, exported to '{os.getcwd()}' as '{bio_export_name}.txt'.")
     time.sleep(1)
-    print("Have a Nice day?")
+    print("Have a Nice day")
 else:
-    print("Have a Nice day?")
+    print("Have a Nice day")
 time.sleep(2)
 
 
